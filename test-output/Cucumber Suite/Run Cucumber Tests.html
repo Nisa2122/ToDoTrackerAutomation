@@ -57,9 +57,15 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/3</td>
 </tr><tr>
+<<<<<<< HEAD
 <td>Started on:</td><td>Wed May 20 10:59:41 IST 2026</td>
 </tr>
 <tr><td>Total time:</td><td>31 seconds (31291 ms)</td>
+=======
+<td>Started on:</td><td>Fri May 22 15:34:44 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>32 seconds (32075 ms)</td>
+>>>>>>> b5702b7 (Commited)
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,6 +83,7 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.TestNGToDo.deleteTask()'><b>deleteTask</b><br>Test class: tests.TestNGToDo</td>
+<<<<<<< HEAD
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
@@ -113,6 +120,24 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [0b57ad86207409cbe0c08b0037d45f82, findElement {value=(//i[contains(@class,&apos;fa-trash&apos;)])[1], using=xpath}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2484173\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54786}, goog:processID: 25888, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54786/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 0b57ad86207409cbe0c08b0037d45f82
+=======
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: (//i[contains(@class,&apos;fa-trash&apos;)])[1]&apos;
+(tried for 10 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at pages.ToDoPage.clickDelete(ToDoPage.java:135)
+	at tests.TestNGToDo.deleteTask(TestNGToDo.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//i[contains(@class,&apos;fa-trash&apos;)])[1]&quot;}
+  (Session info: chrome=146.0.7680.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [210e4f46bff7930951d1ad77b827ad8d, findElement {using=xpath, value=(//i[contains(@class,&apos;fa-trash&apos;)])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2484140\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49817}, goog:processID: 23272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49817/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 210e4f46bff7930951d1ad77b827ad8d
+>>>>>>> b5702b7 (Commited)
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -131,8 +156,19 @@ Session ID: 0b57ad86207409cbe0c08b0037d45f82
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+<<<<<<< HEAD
 	at pages.ToDoPage.clickDelete(ToDoPage.java:471)
 	at tests.TestNGToDo.deleteTask(TestNGToDo.java:68)
+=======
+	... 27 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace161938368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace161938368'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: (//i[contains(@class,&apos;fa-trash&apos;)])[1]&apos;
+(tried for 10 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at pages.ToDoPage.clickDelete(ToDoPage.java:135)
+	at tests.TestNGToDo.deleteTask(TestNGToDo.java:69)
+>>>>>>> b5702b7 (Commited)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -158,9 +194,43 @@ Session ID: 0b57ad86207409cbe0c08b0037d45f82
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+<<<<<<< HEAD
 </pre></div></td>
 <td>0</td>
 <td>tests.TestNGToDo@7c7a06ec</td></tr>
+=======
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//i[contains(@class,&apos;fa-trash&apos;)])[1]&quot;}
+  (Session info: chrome=146.0.7680.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [210e4f46bff7930951d1ad77b827ad8d, findElement {using=xpath, value=(//i[contains(@class,&apos;fa-trash&apos;)])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2484140\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49817}, goog:processID: 23272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49817/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 210e4f46bff7930951d1ad77b827ad8d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 27 more
+</pre></div></td>
+<td>10</td>
+<td>tests.TestNGToDo@3eb738bb</td></tr>
+>>>>>>> b5702b7 (Commited)
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -171,6 +241,7 @@ Session ID: 0b57ad86207409cbe0c08b0037d45f82
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='tests.TestNGToDo.checkCountdown()'><b>checkCountdown</b><br>Test class: tests.TestNGToDo</td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
@@ -313,6 +384,35 @@ Session ID: 0b57ad86207409cbe0c08b0037d45f82
 	at pages.ToDoPage.enterTask(ToDoPage.java:410)
 	at pages.ToDoPage.createTasksFromExcel(ToDoPage.java:508)
 	at tests.TestNGToDo.createTasks(TestNGToDo.java:23)
+=======
+<td title='tests.TestNGToDo.createTasks()'><b>createTasks</b><br>Test class: tests.TestNGToDo</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (210e4f46bff7930951d1ad77b827ad8d)] -&gt; id: taskInput]
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2484140\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49817}, goog:processID: 23272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49817/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 210e4f46bff7930951d1ad77b827ad8d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at pages.ToDoPage.enterTask(ToDoPage.java:74)
+	at pages.ToDoPage.createTasksFromExcel(ToDoPage.java:172)
+	at tests.TestNGToDo.createTasks(TestNGToDo.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace48428832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace48428832'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (210e4f46bff7930951d1ad77b827ad8d)] -&gt; id: taskInput]
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2484140\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49817}, goog:processID: 23272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49817/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 210e4f46bff7930951d1ad77b827ad8d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at pages.ToDoPage.enterTask(ToDoPage.java:74)
+	at pages.ToDoPage.createTasksFromExcel(ToDoPage.java:172)
+	at tests.TestNGToDo.createTasks(TestNGToDo.java:24)
+>>>>>>> b5702b7 (Commited)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -340,8 +440,54 @@ Session ID: 0b57ad86207409cbe0c08b0037d45f82
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
+<<<<<<< HEAD
 <td>14</td>
 <td>tests.TestNGToDo@7c7a06ec</td></tr>
+=======
+<td>11</td>
+<td>tests.TestNGToDo@3eb738bb</td></tr>
+<tr>
+<td title='tests.TestNGToDo.checkCountdown()'><b>checkCountdown</b><br>Test class: tests.TestNGToDo</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tests.TestNGToDo.checkCountdown(TestNGToDo.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace327986890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace327986890'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at tests.TestNGToDo.checkCountdown(TestNGToDo.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestNGToDo@3eb738bb</td></tr>
+>>>>>>> b5702b7 (Commited)
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -352,6 +498,7 @@ Session ID: 0b57ad86207409cbe0c08b0037d45f82
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='tests.TestNGToDo.completeTask()'><b>completeTask</b><br>Test class: tests.TestNGToDo</td>
 <td><div><pre>java.lang.Throwable: Method tests.TestNGToDo.completeTask() on instance tests.TestNGToDo@7c7a06ec depends on not successfully finished methods 
 [tests.TestNGToDo.updateTask() on instance tests.TestNGToDo@7c7a06ec]
@@ -389,6 +536,15 @@ Session ID: 0b57ad86207409cbe0c08b0037d45f82
 ... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1470400901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1470400901'><pre>java.lang.Throwable: Method tests.TestNGToDo.calcTotal() on instance tests.TestNGToDo@7c7a06ec depends on not successfully finished methods 
 [tests.TestNGToDo.completeTask() on instance tests.TestNGToDo@7c7a06ec]
+=======
+<td title='tests.TestNGToDo.calcTotal()'><b>calcTotal</b><br>Test class: tests.TestNGToDo</td>
+<td><div><pre>java.lang.Throwable: Method tests.TestNGToDo.calcTotal() on instance tests.TestNGToDo@3eb738bb depends on not successfully finished methods 
+[tests.TestNGToDo.completeTask() on instance tests.TestNGToDo@3eb738bb]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1253396693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1253396693'><pre>java.lang.Throwable: Method tests.TestNGToDo.calcTotal() on instance tests.TestNGToDo@3eb738bb depends on not successfully finished methods 
+[tests.TestNGToDo.completeTask() on instance tests.TestNGToDo@3eb738bb]
+>>>>>>> b5702b7 (Commited)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -410,6 +566,7 @@ Session ID: 0b57ad86207409cbe0c08b0037d45f82
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
+<<<<<<< HEAD
 <td>tests.TestNGToDo@7c7a06ec</td></tr>
 <tr>
 <td title='tests.TestNGToDo.updateTask()'><b>updateTask</b><br>Test class: tests.TestNGToDo</td>
@@ -419,6 +576,17 @@ Session ID: 0b57ad86207409cbe0c08b0037d45f82
 ... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1016090398", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1016090398'><pre>java.lang.Throwable: Method tests.TestNGToDo.updateTask() on instance tests.TestNGToDo@7c7a06ec depends on not successfully finished methods 
 [tests.TestNGToDo.createTasks() on instance tests.TestNGToDo@7c7a06ec]
+=======
+<td>tests.TestNGToDo@3eb738bb</td></tr>
+<tr>
+<td title='tests.TestNGToDo.updateTask()'><b>updateTask</b><br>Test class: tests.TestNGToDo</td>
+<td><div><pre>java.lang.Throwable: Method tests.TestNGToDo.updateTask() on instance tests.TestNGToDo@3eb738bb depends on not successfully finished methods 
+[tests.TestNGToDo.createTasks() on instance tests.TestNGToDo@3eb738bb]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace233271858", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace233271858'><pre>java.lang.Throwable: Method tests.TestNGToDo.updateTask() on instance tests.TestNGToDo@3eb738bb depends on not successfully finished methods 
+[tests.TestNGToDo.createTasks() on instance tests.TestNGToDo@3eb738bb]
+>>>>>>> b5702b7 (Commited)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -440,7 +608,41 @@ Session ID: 0b57ad86207409cbe0c08b0037d45f82
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
+<<<<<<< HEAD
 <td>tests.TestNGToDo@7c7a06ec</td></tr>
+=======
+<td>tests.TestNGToDo@3eb738bb</td></tr>
+<tr>
+<td title='tests.TestNGToDo.completeTask()'><b>completeTask</b><br>Test class: tests.TestNGToDo</td>
+<td><div><pre>java.lang.Throwable: Method tests.TestNGToDo.completeTask() on instance tests.TestNGToDo@3eb738bb depends on not successfully finished methods 
+[tests.TestNGToDo.updateTask() on instance tests.TestNGToDo@3eb738bb]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1149508419", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1149508419'><pre>java.lang.Throwable: Method tests.TestNGToDo.completeTask() on instance tests.TestNGToDo@3eb738bb depends on not successfully finished methods 
+[tests.TestNGToDo.updateTask() on instance tests.TestNGToDo@3eb738bb]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestNGToDo@3eb738bb</td></tr>
+>>>>>>> b5702b7 (Commited)
 </table><p>
 </body>
 </html>

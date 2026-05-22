@@ -74,6 +74,7 @@
 package base;
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -120,6 +121,8 @@ public class Base {
     }
 
     public void pause(int ms) {
-        try { Thread.sleep(ms); } catch (Exception e) {}
+        try { 
+        	Thread.sleep(ms);
+        	} catch (Exception e) {}
     }
 }

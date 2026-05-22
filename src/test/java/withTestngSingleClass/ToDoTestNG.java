@@ -1,6 +1,7 @@
 package withTestngSingleClass;
 
 import org.openqa.selenium.*;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.*;
 import org.testng.annotations.*;
@@ -20,9 +21,8 @@ public class ToDoTestNG {
         } catch (InterruptedException e) {}
     }
 
-    // =========================
+   
     // SETUP (runs first)
-    // =========================
     @BeforeClass
     public void setup() {
         driver = new ChromeDriver();
@@ -34,9 +34,8 @@ public class ToDoTestNG {
         pause(2000);
     }
 
-    // =========================
     // CREATE TASKS
-    // =========================
+    
     @Test(priority = 1)
     public void createTasks() {
 
@@ -52,18 +51,15 @@ public class ToDoTestNG {
 
         System.out.println("Creating task: " + taskName);
 
-        WebElement taskInput = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.id("taskInput")));
+        WebElement taskInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("taskInput")));
         taskInput.clear();
         taskInput.sendKeys(taskName);
         pause(1000);
 
-        ((JavascriptExecutor) driver)
-                .executeScript("document.getElementById('dateInput').value='2026-05-10'");
+        ((JavascriptExecutor) driver).executeScript("document.getElementById('dateInput').value='2026-05-10'");
         pause(1000);
 
-        ((JavascriptExecutor) driver)
-                .executeScript("document.getElementById('startTimeInput').value='10:00'");
+        ((JavascriptExecutor) driver).executeScript("document.getElementById('startTimeInput').value='10:00'");
         pause(1000);
 
         driver.findElement(By.id("hoursInput")).clear();
@@ -83,18 +79,15 @@ public class ToDoTestNG {
         pause(2000);
     }
 
-    // =========================
     // EDIT
-    // =========================
+    
     @Test(priority = 2)
     public void editTask() {
 
         System.out.println("Editing first task");
 
-        WebElement editBtn = wait.until(
-                ExpectedConditions.elementToBeClickable(
-                        By.xpath("//*[@id='taskList']/li[1]/div/i[1]")
-                ));
+        WebElement editBtn = wait.until(ExpectedConditions.elementToBeClickable(
+        		By.xpath("//*[@id='taskList']/li[1]/div/i[1]") ));
         editBtn.click();
         pause(2000);
     }

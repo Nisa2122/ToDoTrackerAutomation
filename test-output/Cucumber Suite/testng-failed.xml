@@ -8,8 +8,13 @@
           <include name="openApp"/>
           <include name="calcTotal"/>
           <include name="createTasks"/>
+<<<<<<< HEAD
           <include name="deleteTask"/>
           <include name="completeTask"/>
+=======
+          <include name="completeTask"/>
+          <include name="deleteTask"/>
+>>>>>>> b5702b7 (Commited)
           <include name="checkCountdown"/>
           <include name="updateTask"/>
         </methods>
